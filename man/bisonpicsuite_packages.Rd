@@ -7,7 +7,7 @@
 bisonpicsuite_packages(include_self = TRUE)
 }
 \arguments{
-\item{include_self}{Include bbousuite in the list?}
+\item{include_self}{Include bisonpicsuite in the list?}
 }
 \description{
 Inspired by \code{tidyverse::tidyverse_packages()}.

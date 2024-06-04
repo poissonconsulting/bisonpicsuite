@@ -7,7 +7,7 @@ msg <- function(...) {
 #' List all bisonpicsuite packages
 #'
 #' Inspired by `tidyverse::tidyverse_packages()`.
-#' @param include_self Include bbousuite in the list?
+#' @param include_self Include bisonpicsuite in the list?
 #' @export
 #' @examples
 #' bisonpicsuite_packages()
