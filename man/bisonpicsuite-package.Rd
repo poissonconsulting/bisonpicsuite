@@ -6,7 +6,7 @@
 \alias{bisonpicsuite-package}
 \title{bisonpicsuite: Easily Install and Load `bisonpic` R Packages}
 \description{
-This suite of packages is designed to facilitate data exploration and analysis of Wood Bison camera trap data, using underlying functions to visualize and model data (`bisonpictools`) and Shiny applications that streamline the data visualization (`shinybisonpic`) and data analysis (`runbisonpic`) processes.
+This suite of packages is designed to facilitate data exploration and analysis of wood bison camera trap data, using underlying functions to visualize and model data (`bisonpictools`) and Shiny applications that streamline the data visualization (`shinybisonpic`) and data analysis (`runbisonpic`) processes.
 }
 \seealso{
 Useful links:

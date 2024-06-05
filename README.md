@@ -14,7 +14,7 @@ The goal of `bisonpicsuite` is to make it easy to install and load the
 **BISON** camera trap (**PIC**) data.
 
 The packages are designed to facilitate data exploration and analysis of
-Wood Bison camera trap data, using underlying functions to visualize and
+wood bison camera trap data, using underlying functions to visualize and
 analyze data (`bisonpictools`) and Shiny applications that streamline
 the data visualization (`shinybisonpic`) and data analysis
 (`runbisonpic`) processes.
