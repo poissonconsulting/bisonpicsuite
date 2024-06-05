@@ -31,7 +31,7 @@ remotes::install_github("poissonconsulting/bisonpicsuite")
 
 ## Load
 
-To load `bisonpicsuite`
+To load `bisonpicsuite`, execute the following line of code.
 
 ``` r
 library(bisonpicsuite)
