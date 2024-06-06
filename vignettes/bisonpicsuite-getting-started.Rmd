@@ -84,8 +84,8 @@ We suggest downloading the template from one of the Shiny apps and populating it
 
 ### `shinybisonpic`
 
-Use the [`shinybisonpic` Shiny app](https://poissonconsulting.shinyapps.io/shinybisonpic/) to explore the locations of camera traps and the the ratios of different classes of wood bison in camera trap observations.
-Refer to the [user guide](https://poissonconsulting.github.io/bisonpictools/user-guide.html) for more information on how to use the `shinybisonpic` app.
+Use the [`shinybisonpic` Shiny app](https://poissonconsulting.shinyapps.io/shinybisonpic-dev/) to explore the locations of camera traps and the the ratios of different classes of wood bison in camera trap observations.
+Refer to the [user guide](https://poissonconsulting.github.io/bisonpicsuite/bisonpic-user-guide.html) for more information on how to use the `shinybisonpic` app.
 
 ## Data Analysis
 
@@ -103,7 +103,7 @@ See the [user guide](https://poissonconsulting.github.io/bisonpictools/user-guid
 ## Using the RStudio Console
 
 Data visualization and analysis can alternatively be done in the RStudio console by running the functions from `bisonpictools` that form the basis of both of the above shiny apps.
-See the ["Getting Started with bisonpictools"](https://poissonconsulting.github.io/bisonpictools/bisonpictools-getting-started.html) vignette for more detail.
+See the ["Getting Started with bisonpictools"](https://poissonconsulting.github.io/bisonpictools/bisonpictools-getting-started.html) article for more detail.
 
 ## Contribution
 
