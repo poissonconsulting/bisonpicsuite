@@ -60,12 +60,12 @@ The packages installed and loaded by `bisonpicsuite` suite are:
 Additional information is available from the [`bisonpicsuite`](https://poissonconsulting.github.io/bisonpicsuite/) and [`bisonpictools`](https://poissonconsulting.github.io/bisonpictools/) websites, which contain the following articles:
 
 - `bisonpicsuite`
-  - ["Getting Started with bisonpicsuite"](https://poissonconsulting.github.io/bisonpicsuite/bisonpicsuite-getting-started.html)
-  - ["Bisonpic User Guide"](https://poissonconsulting.github.io/bisonpicsuite/bisonpic-user-guide.html)
+  - [Getting Started with bisonpicsuite](https://poissonconsulting.github.io/bisonpicsuite/bisonpicsuite-getting-started.html)
+  - [Bisonpic User Guide](https://poissonconsulting.github.io/bisonpicsuite/bisonpic-user-guide.html)
 
 - `bisonpictools`
-  - ["Getting Started with bisonpictools"](https://poissonconsulting.github.io/bisonpictools/bisonpictools-getting-started.html)
-  - ["Analytical Methods"](https://poissonconsulting.github.io/bisonpictools/bisonpic-methods.html)
+  - [Getting Started with bisonpictools](https://poissonconsulting.github.io/bisonpictools/bisonpictools-getting-started.html)
+  - [Analytical Methods](https://poissonconsulting.github.io/bisonpictools/bisonpic-methods.html)
 
 ## Getting Help or Reporting an Issue
 
