@@ -10,7 +10,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 <!-- badges: end -->
 
 The goal of `bisonpicsuite` is to make it easy to install and load the
-`bisonpic` suite of R packages for visualizing and analyzing Wood
+`bisonpic` suite of R packages for visualizing and analyzing wood
 **BISON** camera trap (**PIC**) data.
 
 The packages are designed to facilitate data exploration and analysis of
