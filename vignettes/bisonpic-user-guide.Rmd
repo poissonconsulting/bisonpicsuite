@@ -233,7 +233,7 @@ This app must be launched locally from your computer.
 1. Open RStudio and install the package
 
 ```{r, eval=FALSE}
-# Install package 
+# Install package
 remotes::install_github("poissonconsulting/runbisonpic")
 ```
 
