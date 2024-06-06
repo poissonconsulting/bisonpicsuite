@@ -1,5 +1,5 @@
 ---
-title: 'bisonpic Software: A suite of R packages to derive wildlife population parameters from remote camera image series.'
+title: 'bisonpic Software: A suite of R packages to derive wood bison population parameters from remote camera image series.'
 authors:
 - name: Nicole Hill
   orcid: 0000-0002-7623-2153
