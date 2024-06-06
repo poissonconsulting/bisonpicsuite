@@ -132,6 +132,9 @@ knitr::include_graphics("figures/shinybisonpic-data-upload-successful.png")
     - Increase the number of entries you can see in the table by changing the value in **Show entries**.
     - Sort by the column by clicking on the column name.
     - Search for values by typing in the **Search:** field.
+    
+ - **(E)** To explore the app's functionality without real data, click the **Download Example Data** button to download a small fictitious dataset.
+    - Proceed with uploading this example dataset by restarting from step **(C)** above, then continue with the exploring the other tabs, as explained below.
 
 #### Map Locations
 
@@ -347,6 +350,9 @@ knitr::include_graphics("figures/runbisonpic-data-upload-successful.png")
     - Increase the number of entries you can see in the table by changing the value in **Show entries**.
     - Sort by the column by clicking on the column name.
     - Search for values by typing in the **Search:** field.
+    
+ - **(E)** To explore the app's functionality without real data, click the **Download Example Data** button to download a small fictitious dataset.
+    - Proceed with uploading this example dataset by restarting from step **(C)** above, then continue with the exploring the other tabs, as explained below.
 
 #### Run Model
 
@@ -489,7 +495,7 @@ After a successful run of the model two download buttons will appear in the top 
 
 #### Helpful Tips
 
-- If you set the thinning to 1 and model mode to quick you can get a quick run of the model. This can help to make sure there are no issues with the data before doing a report run that may take a day or more to run. 
+- If you set the thinning to 1 and model mode to quick you can get a quick run of the model. This can help to make sure there are no issues with the data before doing a report run that may take over 5 hours to run.
 
 #### Results
 
