@@ -186,9 +186,12 @@ knitr::include_graphics("figures/shinybisonpic-plot-data-blank-page.jpg")
 ```
 *<font size="-1">Figure 6. Plot Data tab with no variables selected.</font>*
 
-Explore the ratios numerator:(denominator + numerator) of various sex-age groups by selecting any combinations of values.
+Explore the ratios of various sex-age groups by selecting any combinations of values.
+
 Multiple sex-age groups can be selected simultaneously to make up the ratio.
-The numerator:(denominator + numerator) ratio is plotted instead of the typical numerator:denominator ratio because it is possible to choose groups that have a ratio of one positive integer to zero, which equals infinity, and is not easily displayed graphically.
+Note that a ratio value of "Inf" (infinity) indicates that the group in a particular camera trap event has no individuals in the denominator class.
+For example, if plotting the calf:cow ratio, a ratio value of "Inf" would represent an event with one or more calves and no cows.
+Similarly, a ratio of "0" indicates that the ratio in a particular camera trap event has no individuals in the numerator class.
 
 Data must first be uploaded through the Upload Data tab for data to be displayed on this tab. 
 
