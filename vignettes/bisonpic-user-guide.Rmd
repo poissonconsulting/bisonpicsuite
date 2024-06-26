@@ -182,13 +182,16 @@ There is no order to **(B)** or **(C)**, so these steps can be done in any order
 &nbsp;
 
 ```{r out.width = '100%', echo = FALSE}
-knitr::include_graphics("figures/shinybisonpic-plot-data-blank-page.jpg")
+knitr::include_graphics("figures/shinybisonpic-plot-data-blank-page.png")
 ```
 *<font size="-1">Figure 6. Plot Data tab with no variables selected.</font>*
 
 Explore the ratios of various sex-age groups by selecting any combinations of values.
 
 Multiple sex-age groups can be selected simultaneously to make up the ratio.
+
+The default behaviour is to plot all camera trap locations and study years that are in the data.
+
 Note that a ratio value of "Inf" (infinity) indicates that the group in a particular camera trap event has no individuals in the denominator class.
 For example, if plotting the calf:cow ratio, a ratio value of "Inf" would represent an event with one or more calves and no cows.
 Similarly, a ratio of "0" indicates that the ratio in a particular camera trap event has no individuals in the numerator class.
@@ -200,18 +203,20 @@ Data must first be uploaded through the Upload Data tab for data to be displayed
 - **(A)** Select the Plot Data tab.
 - **(B)** Select at least one value for the Numerator.
 - **(C)** Select at least one value for the Denominator.
-- **(D)** At least one value for both the Numerator and Denominator has to be selected for the plot to appear. 
+- **(D)** Optionally, select one or more camera trap locations to filter to. If left blank, the default behaviour is to plot all camera trap locations in the data.
+- **(E)** Optionally, select one or more study years to filter to. If left blank, the default behaviour is to plot all study years in the data.
+- **(F)** At least one value for both the Numerator and Denominator has to be selected for the plot to appear. 
 
 ```{r out.width = '100%', echo = FALSE}
-knitr::include_graphics("figures/shinybisonpic-plot-data-num-den-selected.jpg")
+knitr::include_graphics("figures/shinybisonpic-plot-data-num-den-selected.png")
 ```
-*<font size="-1">Figure 7. Example showing male calf selected for the Numerator and female calf selected for the Denominator. Since a value is ticked in both the Numerator and Denominator sections the plot has appeared.</font>*
+*<font size="-1">Figure 7. Example showing all calves selected for the Numerator and female adult selected for the Denominator. Since a value is ticked in both the Numerator and Denominator sections the plot has appeared. The plot only shows the data during the two selected study years (2018-2019 and 2019-2020) and the two selected camera trap locations ("LOCID1" and "LOCID2"). </font>*
 
-- **(E)** Click the **Download Plot** button to get a PNG file of the plot
+- **(G)** Click the **Download Plot** button to get a PNG file of the plot
   - The plot will have a title that lists which values were ticked for the numerator and denominator
   - The download button is only visible when a plot is rendered
 
-- The plot is dynamic and will update when new boxes are ticked in either the Numerator or Denominator sections. Values can be ticked on and off as needed.
+- The plot is dynamic and will update when new boxes are ticked in the Location, Study Year, Numerator, and Denominator sections. Values can be ticked on and off as needed.
 
 **Troubleshooting**
 
