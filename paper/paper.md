@@ -1,5 +1,5 @@
 ---
-title: 'bisonpic Software: A suite of R packages to derive wood bison population parameters from remote camera image series.'
+title: 'bisonpicsuite: A set of R packages to estimate wood bison population parameters from remote camera data.'
 authors:
 - name: Nicole Hill
   orcid: 0000-0002-7623-2153
@@ -14,45 +14,47 @@ authors:
 affiliations:
 - index: 1
   name: Poisson Consulting, Canada
-date: 29 April 2024
+date: 18 September 2024
 bibliography: paper.bib
 tags:
   - bisonpictools
+  - runbisonpic
+  - shinybisonpic
   - camera
   - R
 ---
 
 # Statement of Need
 
-Knowledge of population status and trend is integral to the effective conservation and management of wildlife populations. 
-It is particularly advantageous to anticipate future trends. 
+Knowledge of population status and trends is integral to the effective conservation and management of wildlife populations. 
 To this end, demographic ratios (i.e Calf:Cow ratios) are routinely used in wildlife management as a readily observable measure of productivity and for forecasting population trajectories [@fuller2007; @wittmer2005; @bender2006]. 
-More complex state-space population modelling approaches [@buckland2004; @paterson2019; @mizuki2020; @newman2023] can be additionally used to derive estimates of survival and fecundity. 
+More complex state-space population modelling approaches [@buckland2004; @paterson2019; @mizuki2020; @newman2023] can also be used to estimate survival and fecundity. 
 Both approaches require classified (by age and sex) counts of individuals in a herd.
 
 In remote areas, estimates of herd size and composition are typically obtained from aerial surveys. 
-However, distinguishing animal age and sex can be challenging, particularly in forested environments, if animals flee or hide from aircraft. 
+However, distinguishing animal age and sex can be challenging, particularly in forested environments if animals flee or hide from aircraft. 
 Remote cameras present an alternative method for obtaining classified counts. 
-Wildlife cameras have been utilized for purposes including species occupancy, density, behaviour, and to identify individuals through district markings [@magoun2011; @steenweg2016; @caravaggi2017; @green2020; @nakashima2020; @singh2022]. 
-Although different age and sex classes can be readily distinguished in remote camera photos for many ungulate species [@laskin2020], we are not aware of any published studies or software using cameras to derive population parameters from classified counts of herds for animals without individual markings.
+Wildlife cameras have been utilized for purposes including species occupancy, density, behaviour, and to identify individuals through distinct markings [@magoun2011; @steenweg2016; @caravaggi2017; @green2020; @nakashima2020; @singh2022]. 
+Although different age and sex classes can be readily distinguished in remote camera photos for many ungulate species [@laskin2020], we are not aware of any published studies or software that uses camera data to estimate population parameters from classified counts of animals without individual markings.
 
 # Summary
 
 We present a method utilizing classified counts from remote cameras to evaluate wood bison herd demographics.
-We modeled demographic ratios, survival and productivity using an integrated population model (IPM) to combine stage-structured information from multiple data sources to describe demographic states and transitions [@schaub_integrated_2022]. A Gaussian process regression [@mcelreath2016] accounts for the spatial and temporal correlation structure of the camera observations.
+We modeled demographic ratios, survival and productivity using an integrated population model (IPM) to combine stage-structured information from multiple data sources to describe demographic states and transitions [@schaub_integrated_2022]. 
+A Gaussian process regression [@mcelreath2016] accounts for the spatial and temporal correlation structure of the camera observations.
 This novel approach requires an initial population estimate but does not require individual identification and could be applied non-invasively to a wide array of difficult to survey species to estimate the key parameters that drive population dynamics.
 
 ![](bisonpicwriteup-diagram.png "Figure 1. Overview of the bisonpic suite of tools.")
 
 *Figure 1. Overview of the bisonpic suite of tools.*
 
-This method is implemented using three connected R packages, bisonpictools provides underlying functionality to clean, process, model, and visualize data. 
-The other two R packages are apps that provide a user-friendly interface to bisonpictools. 
-The first app is shinybisonpic. 
+This method is implemented using three connected R packages, `bisonpictools` provides the underlying functionality to clean, process, model, and visualize data. 
+The other two R packages are apps that provide a user-friendly interface to `bisonpictools`. 
+The first app is `shinybisonpic`. 
 This web-based app allows users to upload and explore the data by viewing the locations of cameras and the ratios of selected sex-age groups. 
-The second app is runbisonpic which is run locally. 
+The second app is `runbisonpic` which is run locally. 
 This app allows users to run a model to calculate the abundance by class, total abundance, survival, fecundity, and various sex-age ratios. 
-Bisonpictools, shinybisonpic and runbisonpic were developed for Alberta Environment and Parks to enable remote game cameras to monitor the herd composition of wood bison.
+All three packages (`bisonpictools`, `shinybisonpic` and `runbisonpic`) were developed for Alberta Environment and Parks to enable remote game cameras to monitor the herd composition of wood bison and estimate the population parameter.
 
 # Features
 
@@ -80,7 +82,7 @@ Documentation
 
 # Limitations
 
-The model is slow to run and can take over 5 hours to complete running.
+The model can take over 5 hours to run.
 
 # Acknowledgements
 
