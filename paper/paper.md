@@ -61,8 +61,8 @@ where $F0_i$ is the number of female calves, $M0_i$ is the total number of male 
 
 The population projection model also estimated the fecundity rate and proportion of fecund 2+-year-old cows, and annually-varying survival rates for each class.
 The information from the aerial surveys was integrated into the model, helping to inform the total number of individuals (i.e., the sum of the class-wise abundances) and the proportion of calves (i.e., $p_{F0_i} + p_{M0_i}$) on the dates of the aerial surveys.
-A Gaussian process regression [@mcelreath2016] accounts for the spatial and temporal correlation structure of the camera trap observations.
-This novel approach requires an initial population estimate but does not require individual identification and could be applied non-invasively to a wide array of difficult to survey species to estimate key parameters that drive population dynamics.
+A Gaussian process regression [@mcelreath2016] accounted for the spatial and temporal correlation structure of the camera trap observations.
+This method could be applied non-invasively to a wide array of difficult to survey species to estimate key parameters that drive population dynamics.
 
 This method is implemented using three connected R packages.
 The underlying functionality to clean, process, model, and visualize data is provided by `bisonpictools`.
