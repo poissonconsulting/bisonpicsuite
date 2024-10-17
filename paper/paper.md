@@ -86,7 +86,7 @@ All three packages (`bisonpictools`, `shinybisonpic` and `runbisonpic`) were dev
   - Basic instructions are easily accessible within the app.
   - User Manual vignette that walks users through the detailed steps and options.
   
-![](ratio-plot-2.png "Figure 1. Calf:Cow ratio of the Ronald Lake Wood Bison herd by camera trap location ID, date of observation, study year, season, and group size. A ratio of 0 represents a group dominated by cows, while an infinite ratio (Inf) represents a group dominated by calves.")
+![](ratio-plot.png "Figure 1. Calf:Cow ratio of the Ronald Lake Wood Bison herd by camera trap location ID, date of observation, study year, season, and group size. A ratio of 0 represents a group dominated by cows, while an infinite ratio (Inf) represents a group dominated by calves.")
 
 *Figure 1. Calf:Cow ratio of the Ronald Lake Wood Bison herd by camera trap location ID, date of observation, study year, season, and group size. A ratio of 0 represents a group dominated by cows, while an infinite ratio (Inf) represents a group dominated by calves.*
 
