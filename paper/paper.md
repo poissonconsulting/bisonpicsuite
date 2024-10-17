@@ -40,12 +40,12 @@ Although different age and sex classes can be readily distinguished in remote ca
 # Summary
 
 We present a method utilizing classified counts from remote cameras to evaluate wood bison herd demographics.
-We modeled demographic ratios, survival, and productivity using an integrated population model (IPM) to combine stage-structured information from multiple data sources to describe demographic states and transitions [@schaub_integrated_2022]. 
+We modeled demographic ratios, survival, and productivity using an integrated population model (IPM) to combine stage-structured information from multiple data sources to describe demographic states and transitions [@schaubintegrated2022]. 
 The data included the classified counts from camera trap observations, and census and proportion of calves estimates from aerial surveys.
 
 The counts of classified individuals from each camera trap observation were represented by a series of binomial distributions that informed both the counts of each age class (calf, yearling, adult) and corresponding sex ratios.
 This method allowed us to account for individuals that were classified by age, but not by sex.
-The probabilities for each of the binomial draws were informed by the estimated proportions of individuals in each age and sex class in the population on a given date, which was modelled using a Birth-Age-Survival (BAS) subprocess formulation of a population projection model [@newman_modelling_2014].
+The probabilities for each of the binomial draws were informed by the estimated proportions of individuals in each age and sex class in the population on a given date, which was modelled using a Birth-Age-Survival (BAS) subprocess formulation of a population projection model [@newmanmodelling2014].
 
 For example, the count of calves at the $i^{th}$ camera trap observation was modelled as follows: 
 
