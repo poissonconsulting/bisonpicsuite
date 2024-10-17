@@ -49,13 +49,13 @@ The probabilities for each of the binomial draws were informed by the estimated 
 
 For example, the count of calves at the $i^{th}$ camera trap observation was modelled as follows: 
 
-\[C_i \sim \text{Binomial}(N_i, p_{C_i})\]
+$$C_i \sim \text{Binomial}(N_i, p_{C_i})$$
 
 where $C_i$ is the number of calves, $N_i$ is the total group size, and $p_{C_i}$ is the sum of the expected proportions of male and female calves on the date of the $i^{th}$ observation.
 
 The sex ratio of calves was modelled as follows:
 
-\[F0_i \sim \text{Binomial}\Biggl(C_i, \frac{p_{F0_i}}{p_{F0_i} + p_{M0_i}}\Biggr)\]
+$$F0_i \sim \text{Binomial}\Biggl(C_i, \frac{p_{F0_i}}{p_{F0_i} + p_{M0_i}}\Biggr)$$
 
 where $F0_i$ is the number of female calves, $M0_i$ is the total number of male calves, and $p_{F0_i}$ and $p_{M0_i}$ are the expected proportion of female and male calves on the date of the $i^{th}$ observation, respectively.
 
