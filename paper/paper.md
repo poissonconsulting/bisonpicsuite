@@ -40,7 +40,7 @@ Although different age and sex classes can be readily distinguished in remote ca
 # Summary
 
 We present a method utilizing classified counts from remote cameras to evaluate wood bison herd demographics.
-We modeled demographic ratios, survival, and productivity using an integrated population model (IPM) to combine stage-structured information from multiple data sources to describe demographic states and transitions [@schaubintegrated2022]. 
+We modeled demographic ratios, survival, and productivity using a Bayesian integrated population model (IPM) to combine stage-structured information from multiple data sources to describe demographic states and transitions [@schaubintegrated2022]. 
 The data included the classified counts from camera trap observations, and census and proportion of calves estimates from aerial surveys.
 
 The counts of classified individuals from each camera trap observation were represented by a series of binomial distributions that informed both the counts of each age class (calf, yearling, adult) and corresponding sex ratios.
@@ -59,10 +59,10 @@ $$F0_i \sim \text{Binomial}\Biggl(C_i, \frac{p_{F0_i}}{p_{F0_i} + p_{M0_i}}\Bigg
 
 where $F0_i$ is the number of female calves, $M0_i$ is the total number of male calves, and $p_{F0_i}$ and $p_{M0_i}$ are the expected proportion of female and male calves on the date of the $i^{th}$ observation, respectively.
 
-The population projection model also estimated the fecundity rate and proportion of fecund 2+-year-old cows, and annually-varying survival rates for each class.
+The population projection model also estimated the fecundity rate, the proportion of fecund 2+-year-old cows, and the annually-varying survival rates for each class.
 The information from the aerial surveys was integrated into the model, helping to inform the total number of individuals (i.e., the sum of the class-wise abundances) and the proportion of calves (i.e., $p_{F0_i} + p_{M0_i}$) on the dates of the aerial surveys.
 A Gaussian process regression [@mcelreath2016] accounted for the spatial and temporal correlation structure of the camera trap observations.
-This method could be applied non-invasively to a wide array of difficult to survey species to estimate key parameters that drive population dynamics.
+Collectively, these methods could be applied non-invasively to a wide array of difficult to survey species to estimate key parameters that drive population dynamics.
 
 This method is implemented using three connected R packages.
 The underlying functionality to clean, process, model, and visualize data is provided by `bisonpictools`.
@@ -79,16 +79,21 @@ All three packages (`bisonpictools`, `shinybisonpic` and `runbisonpic`) were dev
   - Users can explore the camera locations on an interactive map which helps to spatially verify location data are accurate.
   - Users can explore the ratios of any combination of sex-age groups (Figure 1).
 - Data Analysis
-  - Complex custom model that only has a single parameter users must learn how to tune which makes the method accessible for users of various skill levels.
-  - Downloadable analysis object which allows power users to generate their own plots or perform further analysis.
+  - A complex custom model with a single parameter for users to tune, making the method accessible for users of various skill levels.
+  - Downloadable analysis object allowing power users to generate their own plots or perform further analysis.
   - Predictions of the estimated class-wise and total abundances, survival and fecundity rates, and key ratio estimates.
 - Documentation
   - Basic instructions are easily accessible within the app.
-  - User Manual vignette that walks users through the detailed steps and options.
+  - User Manual walks users through the detailed steps and options.
+  - Detailed explanation of statistical methods.
   
-![](ratio-plot.png "Figure 1. Calf:Cow ratio of the Ronald Lake Wood Bison herd by camera trap location ID, date of observation, study year, season, and group size. A ratio of 0 represents a group dominated by cows, while an infinite ratio (Inf) represents a group dominated by calves.")
+![](ratio-plot.png "Figure 1. Example of a data exploration plot from the shinybisonpic app, showing the Calf:Cow ratio of the Ronald Lake Wood Bison herd by camera trap location ID, date of observation, study year, season, and group size. A ratio of 0 represents a group dominated by cows, while an infinite ratio (Inf) represents a group dominated by calves.")
 
-*Figure 1. Calf:Cow ratio of the Ronald Lake Wood Bison herd by camera trap location ID, date of observation, study year, season, and group size. A ratio of 0 represents a group dominated by cows, while an infinite ratio (Inf) represents a group dominated by calves.*
+*Figure 1. Example of a data exploration plot from the shinybisonpic app, showing the Calf:Cow ratio of the Ronald Lake Wood Bison herd by camera trap location ID, date of observation, study year, season, and group size. A ratio of 0 represents a group dominated by cows, while an infinite ratio (Inf) represents a group dominated by calves.*
+
+![](model-plot.png "Figure 2. Example of a prediction plot from the runbisonpic app, showing estimated population ratios for the Ronald Lake Wood Bison herd, by year. M0 and F0 are male and female calves, M1 and F1 are male and female yearlings, Calf and Yearling represent all individuals within those age classes including those with unknown sex, M2 and M3 represent male 2- and 3- year olds, MA represents 4+-year-old males, and FA represents 2+-year-old females.")
+
+*Figure 2. Example of a prediction plot from the runbisonpic app, showing estimated population ratios for the Ronald Lake Wood Bison herd, by year. M0 and F0 are male and female calves, M1 and F1 are male and female yearlings, Calf and Yearling represent all individuals within those age classes including those with unknown sex, M2 and M3 represent male 2- and 3- year olds, MA represents 4+-year-old males, and FA represents 2+-year-old females.*
 
 # Limitations
 
