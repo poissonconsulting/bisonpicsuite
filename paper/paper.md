@@ -31,7 +31,7 @@ To this end, demographic ratios (i.e Calf:Cow ratios, e.g., Fig. 1) are routinel
 More complex state-space population modeling approaches [@buckland2004; @paterson2019; @mizuki2020; @newman2023] can also be used to estimate survival and fecundity.
 To understand the age composition of a population, both of these approaches require classified (by age and sex) counts of individuals in a herd.
 
-![](ratio-plot.png "Figure 1. Example of a data exploration plot from the shinybisonpic app, showing the Calf:Cow ratio of the Ronald Lake Wood Bison herd by camera trap location ID, date of observation, study year, season, and group size. A ratio of 0 represents a group dominated by cows, while an infinite ratio (Inf) represents a group dominated by calves.")
+![](ratio-plot-2.png "Figure 1. Example of a data exploration plot from the shinybisonpic app, showing the Calf:Cow ratio of the Ronald Lake Wood Bison herd by camera trap location ID, date of observation, study year, season, and group size. A ratio of 0 represents a group dominated by cows, while an infinite ratio (Inf) represents a group dominated by calves.")
 
 *Figure 1. Example of a data exploration plot from the shinybisonpic app, showing the Calf:Cow ratio of the Ronald Lake Wood Bison herd by camera trap location ID, date of observation, study year, season, and group size. A ratio of 0 represents a group dominated by cows, while an infinite ratio (Inf) represents a group dominated by calves.*
 
