@@ -81,7 +81,7 @@ All three packages (`bisonpictools`, `shinybisonpic` and `runbisonpic`) were dev
 - Data Analysis
   - A complex custom model with a single parameter for users to tune, making the method accessible for users of various skill levels.
   - Downloadable analysis object allowing power users to generate their own plots or perform further analysis.
-  - Predictions of the estimated class-wise and total abundances, survival and fecundity rates, and key ratio estimates.
+  - Predictions of the estimated class-wise and total abundances, survival and fecundity rates, and key ratio estimates (example in Fig. 2).
 - Documentation
   - Basic instructions are easily accessible within the app.
   - User Manual walks users through the detailed steps and options.
