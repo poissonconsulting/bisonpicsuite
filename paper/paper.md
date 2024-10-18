@@ -28,8 +28,8 @@ tags:
 
 Knowledge of population status and trends is integral to the effective conservation and management of wildlife populations. 
 To this end, demographic ratios (i.e Calf:Cow ratios) are routinely used in wildlife management as a readily observable measure of productivity and for forecasting population trajectories [@fuller2007; @wittmer2005; @bender2006]. 
-More complex state-space population modelling approaches [@buckland2004; @paterson2019; @mizuki2020; @newman2023] can also be used to estimate survival and fecundity. 
-Both approaches require classified (by age and sex) counts of individuals in a herd.
+More complex state-space population modelling approaches [@buckland2004; @paterson2019; @mizuki2020; @newman2023] can also be used to estimate survival and fecundity.
+To understand the age composition of a population, both of these approaches require classified (by age and sex) counts of individuals in a herd.
 
 In remote areas, estimates of herd size and composition are typically obtained from aerial surveys. 
 However, distinguishing animal age and sex can be challenging, particularly in forested environments if animals flee or hide from aircraft. 
