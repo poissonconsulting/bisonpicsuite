@@ -31,15 +31,15 @@ To this end, demographic ratios (i.e Calf:Cow ratios, e.g., Fig. 1) are routinel
 More complex state-space population modeling approaches [@buckland2004; @paterson2019; @mizuki2020; @newman2023] can also be used to estimate survival and fecundity.
 To understand the age composition of a population, both of these approaches require classified (by age and sex) counts of individuals in a herd.
 
-![](ratio-plot-2.png "Figure 1. Example of a data exploration plot from the shinybisonpic app, showing the Calf:Cow ratio of the Ronald Lake Wood Bison herd by camera trap location ID, date of observation, study year, season, and group size. A ratio of 0 represents a group dominated by cows, while an infinite ratio (Inf) represents a group dominated by calves.")
-
-*Figure 1. Example of a data exploration plot from the shinybisonpic app, showing the Calf:Cow ratio of the Ronald Lake Wood Bison herd by camera trap location ID, date of observation, study year, season, and group size. A ratio of 0 represents a group dominated by cows, while an infinite ratio (Inf) represents a group dominated by calves.*
-
 In remote areas, estimates of herd size and composition are typically obtained from aerial surveys. 
 However, distinguishing animal age and sex can be challenging, particularly in forested environments if animals flee or hide from aircraft. 
 Remote cameras present an alternative method for obtaining classified counts. 
 Wildlife cameras have been used to estimate species occupancy, density, behaviour, and to identify individuals through distinct markings [@magoun2011; @steenweg2016; @caravaggi2017; @green2020; @nakashima2020; @singh2022]. 
 Although different age and sex classes can be readily distinguished in remote camera photos for many ungulate species [@laskin2020], we are not aware of any published studies or software that use camera data to estimate population parameters from classified counts of animals without using individual markings.
+
+![](ratio-plot-2.png "Figure 1. Example of a data exploration plot from the shinybisonpic app, showing the Calf:Cow ratio of the Ronald Lake Wood Bison herd by camera trap location ID, date of observation, study year, season, and group size. A ratio of 0 represents a group dominated by cows, while an infinite ratio (Inf) represents a group dominated by calves.")
+
+*Figure 1. Example of a data exploration plot from the shinybisonpic app, showing the Calf:Cow ratio of the Ronald Lake Wood Bison herd by camera trap location ID, date of observation, study year, season, and group size. A ratio of 0 represents a group dominated by cows, while an infinite ratio (Inf) represents a group dominated by calves.*
 
 # Summary
 
