@@ -14,7 +14,7 @@ authors:
 affiliations:
 - index: 1
   name: Poisson Consulting, Canada
-date: 17 October 2024
+date: 28 October 2024
 bibliography: paper.bib
 tags:
   - bisonpictools
