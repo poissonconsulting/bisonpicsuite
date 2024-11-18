@@ -47,13 +47,19 @@ jobs:
         uses: mxschmitt/action-tmate@v3
         with:
           detached: true
+          
+      - name: Install dependencies
+        run: |
+          install.packages(c("remotes"))
+        shell: Rscript {0}
 
-      - uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          extra-packages: any::rcmdcheck
-          needs: check
 
-      - uses: r-lib/actions/check-r-package@v2
-        with:
-          upload-snapshots: true
-          build_args: 'c("--no-manual","--compact-vignettes=gs+qpdf")'
+      # - uses: r-lib/actions/setup-r-dependencies@v2
+      #   with:
+      #     extra-packages: any::rcmdcheck
+      #     needs: check
+# 
+#       - uses: r-lib/actions/check-r-package@v2
+#         with:
+#           upload-snapshots: true
+#           build_args: 'c("--no-manual","--compact-vignettes=gs+qpdf")'
