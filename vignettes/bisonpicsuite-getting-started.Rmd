@@ -98,7 +98,7 @@ Launch the local data analysis app by running the following lines of code in the
 runbisonpic::launch_runbisonpic()
 ```
 
-See the [user guide](https://poissonconsulting.github.io/bisonpicsuite/articles/user-guide.html) for more guidance on how to use the `runbisonpic` app.
+See the [user guide](https://poissonconsulting.github.io/bisonpicsuite/articles/bisonpic-user-guide.html) for more guidance on how to use the `runbisonpic` app.
 
 ## Using the RStudio Console
 
