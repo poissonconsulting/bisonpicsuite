@@ -59,7 +59,7 @@ knitr::include_graphics("figures/app-overview.jpg")
 
 shinybisonpic is an online application.
 
-To access the app, open a web browser and go to  [https://poissonconsulting.shinyapps.io/shinybisonpic-dev/](https://poissonconsulting.shinyapps.io/shinybisonpic-dev/)
+To access the app, open a web browser and go to  [https://poissonconsulting.shinyapps.io/shinybisonpic/](https://poissonconsulting.shinyapps.io/shinybisonpic/)
 
 ### Overview
 
