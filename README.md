@@ -20,6 +20,15 @@ analyze data (`bisonpictools`) and Shiny applications that streamline
 the data visualization (`shinybisonpic`) and data analysis
 (`runbisonpic`) processes.
 
+The data are analyzed using an Bayesian Integrated Population Model,
+which combines a stage-structured population projection matrix model
+with multiple sources of data into a unified framework, allowing for
+estimates of age-sex class ratios, population vital rates, and
+abundances, while maintaining the correct propagation of uncertainty.
+See the [analytical
+methods](https://poissonconsulting.github.io/bisonpictools/articles/bisonpic-methods.html)
+vignette for more detail on the modeling approach.
+
 ## Installation
 
 You can install the latest version of `bisonpicsuite` from
