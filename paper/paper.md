@@ -35,7 +35,7 @@ In remote areas, estimates of herd size and composition are typically obtained f
 However, distinguishing animal age and sex can be challenging, particularly in forested environments if animals flee or hide from aircraft. 
 Remote cameras present an alternative method for obtaining classified counts. 
 Wildlife cameras have been used to estimate species occupancy, density, behaviour, and to identify individuals through distinct markings [@magoun2011; @steenweg2016; @caravaggi2017; @green2020; @nakashima2020; @singh2022]. 
-Although different age and sex classes can be readily distinguished in remote camera photos for many ungulate species [@laskin2020], it is rare that classified count data are used to estimate population parameters without using individual markings.
+Although different age and sex classes can be readily distinguished in remote camera photos for many ungulate species [@laskin2020], it is rare that classified count data are used to estimate population parameters without using individual markings (but see @horneestimating2021, @chitwoodare2017, @ikedaevaluation2013).
 
 ![](ratio-plot.png "Figure 1. Data exploration plot from the shinybisonpic app, showing calf:cow ratios over time from individual remote cameras in the Ronald Lake Wood Bison range in northeast Alberta. Ratios are shown with camera trap ID, date of observation, study year, season, and group size. A ratio of 0 represents a group of entirely cows, while an infinite ratio (Inf) represents a group of entirely calves.")
 
