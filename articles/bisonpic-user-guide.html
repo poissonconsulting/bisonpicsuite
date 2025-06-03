@@ -6,15 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>User Guide for shinybisonpic and runbisonpic Apps • bisonpicsuite</title>
-<script src="../katex-auto.js"></script><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- katex math --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><script src="../katex-auto.js"></script><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/Roboto_Condensed-0.4.9/font.css" rel="stylesheet">
-<link href="../deps/Roboto_Mono-0.4.9/font.css" rel="stylesheet">
-<link href="../deps/Playfair_Display-0.4.9/font.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/Roboto_Condensed-0.4.10/font.css" rel="stylesheet">
+<link href="../deps/Roboto_Mono-0.4.10/font.css" rel="stylesheet">
+<link href="../deps/Playfair_Display-0.4.10/font.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><link href="../deps/KaTex-0.16.10/katex.min.css" rel="stylesheet">
-<script src="../deps/KaTex-0.16.10/katex.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="User Guide for shinybisonpic and runbisonpic Apps">
+<script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="User Guide for shinybisonpic and runbisonpic Apps">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -82,7 +82,7 @@
 <!-- limitations under the License. -->
 <!-- pdf_document -->
 <!-- rmarkdown::html_vignette -->
-<pre><code>April 01, 2025</code></pre>
+<pre><code>June 03, 2025</code></pre>
 <div class="section level2">
 <h2 id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
@@ -102,7 +102,7 @@ total abundance, survival, fecundity, and various sex-age ratios.</p>
 <div class="section level2">
 <h2 id="user-interface-overview">User Interface Overview<a class="anchor" aria-label="anchor" href="#user-interface-overview"></a>
 </h2>
-<p><img src="figures%2Fapp-overview.jpg" width="100%"><em><font size="-1">Figure 1. General layout of the
+<p><img src="figures/app-overview.jpg" width="100%"><em><font size="-1">Figure 1. General layout of the
 apps.</font></em></p>
 <ul>
 <li>To navigate between tabs, click on a new tab.</li>
@@ -138,7 +138,7 @@ subsequent tabs in any order that suits your needs.</p>
 <h4 id="data-upload">Data Upload<a class="anchor" aria-label="anchor" href="#data-upload"></a>
 </h4>
 <p> </p>
-<p><img src="figures%2Fshinybisonpic-data-upload.jpg" width="100%"><em><font size="-1">Figure 2. Upload Data tab and opening screen of
+<p><img src="figures/shinybisonpic-data-upload.jpg" width="100%"><em><font size="-1">Figure 2. Upload Data tab and opening screen of
 app.</font></em></p>
 <p>When the app launches successfully you will see the data upload
 tab.</p>
@@ -209,7 +209,7 @@ select a file</li>
 will appear with a message indicating which rules were not followed. The
 data has not been successfully uploaded to the app.</li>
 </ul>
-<p><img src="figures%2Fshinybisonpic-data-upload-failure.jpg" width="100%"><em><font size="-1">Figure 3. Example of when the data upload failed due
+<p><img src="figures/shinybisonpic-data-upload-failure.jpg" width="100%"><em><font size="-1">Figure 3. Example of when the data upload failed due
 to not following the Required data format, the data must be corrected
 and uploaded again. In this case the upload failed because the word
 “one” was written in the f0 column when the f0 column only accepts
@@ -229,7 +229,7 @@ may take several iterations as you work through various issues.</li>
 <strong>(D)</strong> When the file is successfully uploaded it will
 appear in the Uploaded data box.</li>
 </ul>
-<p><img src="figures%2Fshinybisonpic-data-upload-successful.jpg" width="100%"><em><font size="-1">Figure 4. Example of when the data upload is
+<p><img src="figures/shinybisonpic-data-upload-successful.jpg" width="100%"><em><font size="-1">Figure 4. Example of when the data upload is
 successful.</font></em></p>
 <ul>
 <li>Review the data in the Uploaded data box for errors or issues before
@@ -263,7 +263,7 @@ tabs, as explained below.</li>
 <h4 id="map-locations">Map Locations<a class="anchor" aria-label="anchor" href="#map-locations"></a>
 </h4>
 <p> </p>
-<p><img src="figures%2Fshinybisonpic-map-locations-point.jpg" width="100%"><em><font size="-1">Figure 5. Example of the Map Locations tab showing
+<p><img src="figures/shinybisonpic-map-locations-point.jpg" width="100%"><em><font size="-1">Figure 5. Example of the Map Locations tab showing
 the points of each camera trap on the map. Location LOCID11 has been
 selected in the drop-down menu so it is highlighted in yellow. Clicking
 on a point (here, on location LOCID2) shows a pop-up with specific
@@ -323,7 +323,7 @@ values.</li>
 <h4 id="plot-data">Plot Data<a class="anchor" aria-label="anchor" href="#plot-data"></a>
 </h4>
 <p> </p>
-<p><img src="figures%2Fshinybisonpic-plot-data-blank-page.png" width="100%"><em><font size="-1">Figure 6. Plot Data tab with no variables
+<p><img src="figures/shinybisonpic-plot-data-blank-page.png" width="100%"><em><font size="-1">Figure 6. Plot Data tab with no variables
 selected.</font></em></p>
 <p>Explore the ratios of various sex-age groups by selecting any
 combinations of values.</p>
@@ -361,7 +361,7 @@ years in the data.</li>
 <strong>(F)</strong> At least one value for both the Numerator and
 Denominator has to be selected for the plot to appear.</li>
 </ul>
-<p><img src="figures%2Fshinybisonpic-plot-data-num-den-selected.png" width="100%"><em><font size="-1">Figure 7. Example showing all calves selected for
+<p><img src="figures/shinybisonpic-plot-data-num-den-selected.png" width="100%"><em><font size="-1">Figure 7. Example showing all calves selected for
 the Numerator and female adult selected for the Denominator. Since a
 value is ticked in both the Numerator and Denominator sections the plot
 has appeared. The plot only shows the data during the two selected study
@@ -448,7 +448,7 @@ Going to the Addins button and selecting <strong>Start runbisonpic
 app</strong>
 </li>
 </ul></ul>
-<p><img src="figures%2Frunbisonpic-addins-button.jpg" width="100%"><em><font size="-1">Figure 9. How to launch runbisonpic using the Addins
+<p><img src="figures/runbisonpic-addins-button.jpg" width="100%"><em><font size="-1">Figure 9. How to launch runbisonpic using the Addins
 button in RStudio.</font></em></p>
 </div>
 <div class="section level3">
@@ -474,7 +474,7 @@ so you can use the template file in both apps.</p>
 <h4 id="data-upload-1">Data Upload<a class="anchor" aria-label="anchor" href="#data-upload-1"></a>
 </h4>
 <p> </p>
-<p><img src="figures%2Frunbisonpic-data-upload-tab.jpg" width="100%"><em><font size="-1">Figure 10. Upload Data tab and opening screen of
+<p><img src="figures/runbisonpic-data-upload-tab.jpg" width="100%"><em><font size="-1">Figure 10. Upload Data tab and opening screen of
 app.</font></em></p>
 <p>When the app launches successfully you will see this page.</p>
 <p>Data must be first uploaded in the Upload Data tab for the Run Model
@@ -553,7 +553,7 @@ data has not been successfully uploaded to the app.</li>
 </ul>
 </li>
 </ul>
-<p><img src="figures%2Frunbisonpic-data-upload-failure.jpg" width="100%"><em><font size="-1">Figure 11. Example of when the data upload failed
+<p><img src="figures/runbisonpic-data-upload-failure.jpg" width="100%"><em><font size="-1">Figure 11. Example of when the data upload failed
 due to not following the Required data format, the data must be
 corrected and uploaded again. In this case the upload failed because the
 name of the sheet in the excel file was changed from the template, the
@@ -573,7 +573,7 @@ may take several iterations as you work through various issues</li>
 <strong>(D)</strong> When the file is successfully uploaded it will
 appear in the Uploaded data box.</li>
 </ul>
-<p><img src="figures%2Frunbisonpic-data-upload-successful.jpg" width="100%"><em><font size="-1">Figure 12. Example of when the data upload is
+<p><img src="figures/runbisonpic-data-upload-successful.jpg" width="100%"><em><font size="-1">Figure 12. Example of when the data upload is
 successful.</font></em></p>
 <ul>
 <li>Review the data in the Uploaded data box for errors or issues before
@@ -607,7 +607,7 @@ tabs, as explained below.</li>
 <h4 id="run-model">Run Model<a class="anchor" aria-label="anchor" href="#run-model"></a>
 </h4>
 <p> </p>
-<p><img src="figures%2Frunbisonpic-model-tab.jpg" width="100%"><em><font size="-1">Figure 13. Run Model tab before the Run button is
+<p><img src="figures/runbisonpic-model-tab.jpg" width="100%"><em><font size="-1">Figure 13. Run Model tab before the Run button is
 pressed.</font></em></p>
 <p><strong>Usage</strong></p>
 <ul>
@@ -650,11 +650,11 @@ following occur:
 </ul>
 </li>
 </ul>
-<p><img src="figures%2Frunbisonpic-model-spinner.jpg" width="100%"><em><font size="-1">Figure 14. Example of when the model is running.
+<p><img src="figures/runbisonpic-model-spinner.jpg" width="100%"><em><font size="-1">Figure 14. Example of when the model is running.
 Users must wait until the blue screen with the spinner is gone before
 they can continue to the next steps.</font></em></p>
 <p> </p>
-<p><img src="figures%2Frunbisonpic-successful-model.jpg" width="100%"><em><font size="-1">Figure 15. Run Model tab after the model finishes
+<p><img src="figures/runbisonpic-successful-model.jpg" width="100%"><em><font size="-1">Figure 15. Run Model tab after the model finishes
 running.</font></em></p>
 <ul>
 <li>
@@ -829,7 +829,7 @@ run.</li>
 <h4 id="results">Results<a class="anchor" aria-label="anchor" href="#results"></a>
 </h4>
 <p> </p>
-<p><img src="figures%2Frunbisonpic-results.jpg" width="100%"><em><font size="-1">Figure 16. Results tab which shows the results of
+<p><img src="figures/runbisonpic-results.jpg" width="100%"><em><font size="-1">Figure 16. Results tab which shows the results of
 the model run.</font></em></p>
 <p><strong>Usage</strong></p>
 <ul>
@@ -987,7 +987,7 @@ to the NEWS.md file of each package:</p>
 <div class="section level2">
 <h2 id="version">Version<a class="anchor" aria-label="anchor" href="#version"></a>
 </h2>
-<pre><code>R version 4.4.3 (2025-02-28)
+<pre><code>R version 4.5.0 (2025-04-11)
 shinybisonpic: 0.5.0
 runbisonpic: 0.3.0
 bisonpictools: 0.1.0</code></pre>
@@ -1023,7 +1023,7 @@ limitations under the License.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
 </div>
 
     </footer>
