@@ -37,6 +37,8 @@ Remote cameras present an alternative method for obtaining classified counts.
 Wildlife cameras have been used to estimate species occupancy, density, behaviour, and to identify individuals through distinct markings [@magoun2011; @steenweg2016; @caravaggi2017; @green2020; @nakashima2020; @singh2022]. 
 Although different age and sex classes can be readily distinguished in remote camera photos for many ungulate species [@laskin2020], classified count camera data are seldom utilized to estimate population parameters without using individual markings (but see @horneestimating2021, @chitwoodare2017, @ikedaevaluation2013).
 
+There are various R packages that work with camera trap data but no packages that we are aware of that use a Bayesian integrated population model to generate estimates for population vital rates.
+
 ![*Data exploration plot from the shinybisonpic app, showing calf:cow ratios over time from individual remote cameras in the Ronald Lake Wood Bison range in northeast Alberta. Ratios are shown with camera trap ID, observation date, study year, season, and group size. A ratio of 0 represents a group of entirely cows, while an infinite ratio (Inf) represents a group of entirely calves.* \label{fig:ratioplot}](ratio-plot.png) 
 
 # Summary
