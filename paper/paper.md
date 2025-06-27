@@ -37,7 +37,7 @@ Remote cameras present an alternative method for obtaining classified counts.
 Wildlife cameras have been used to estimate species occupancy, density, behaviour, and to identify individuals through distinct markings [@magoun2011; @steenweg2016; @caravaggi2017; @green2020; @nakashima2020; @singh2022]. 
 Although different age and sex classes can be readily distinguished in remote camera photos for many ungulate species [@laskin2020], classified count camera data are seldom utilized to estimate population parameters without using individual markings (but see @horneestimating2021, @chitwoodare2017, @ikedaevaluation2013).
 
-![*Figure 1. Data exploration plot from the shinybisonpic app, showing calf:cow ratios over time from individual remote cameras in the Ronald Lake Wood Bison range in northeast Alberta. Ratios are shown with camera trap ID, observation date, study year, season, and group size. A ratio of 0 represents a group of entirely cows, while an infinite ratio (Inf) represents a group of entirely calves.* \label{fig:ratioplot}](ratio-plot.png) 
+![*Data exploration plot from the shinybisonpic app, showing calf:cow ratios over time from individual remote cameras in the Ronald Lake Wood Bison range in northeast Alberta. Ratios are shown with camera trap ID, observation date, study year, season, and group size. A ratio of 0 represents a group of entirely cows, while an infinite ratio (Inf) represents a group of entirely calves.* \label{fig:ratioplot}](ratio-plot.png) 
 
 # Summary
 
@@ -67,7 +67,7 @@ The information from the aerial surveys was integrated into the model, helping i
 A Gaussian process regression [@mcelreath2016] accounted for the spatial and temporal correlation structure of the camera trap observations.
 Collectively, these methods could be applied non-invasively to a wide array of difficult to survey species to estimate key parameters that drive population dynamics.
 
-![*Figure 2. Example of a prediction plot from the runbisonpic app, showing estimated population ratios for the Ronald Lake Wood Bison herd, by study year. M0 and F0 are male and female calves, M1 and F1 are male and female yearlings, Calf and Yearling represent all individuals within those age classes including those with unknown sex, M2 and M3 represent male two- and three-year-olds, MA represents males aged four and older, and FA represents females aged two and older.* \label{fig:modelplot}](model-plot.png)
+![*Example of a prediction plot from the runbisonpic app, showing estimated population ratios for the Ronald Lake Wood Bison herd, by study year. M0 and F0 are male and female calves, M1 and F1 are male and female yearlings, Calf and Yearling represent all individuals within those age classes including those with unknown sex, M2 and M3 represent male two- and three-year-olds, MA represents males aged four and older, and FA represents females aged two and older.* \label{fig:modelplot}](model-plot.png)
 
 This method is implemented using four related R packages.
 The underlying functionality to check, clean, process, model, and visualize data is provided by `bisonpictools`.
