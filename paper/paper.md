@@ -47,7 +47,6 @@ We present a method utilizing classified counts from remote cameras to evaluate 
 We modeled demographic ratios, survival, and productivity using a Bayesian integrated population model (IPM) to combine stage-structured information from multiple data sources and estimate demographic states and transitions [@schaubintegrated2022]. 
 The data included classified counts from camera trap observations and census and proportion of calves estimates from aerial surveys.
 
-
 A series of binomial distributions were used to inform both the counts of classified individuals each age class (calf, yearling, adult) and corresponding sex ratios from each camera trap observation.
 Using binomial distributions, as opposed to a multinomial distribution, allowed us to account for individuals that were classified by age, but not by sex.
 The probabilities for each of the binomial draws were informed by the estimated proportions of individuals in each age and sex class in the population on a given date, which was modeled using a Birth-Age-Survival (BAS) subprocess formulation of a population projection model [@newmanmodelling2014].
