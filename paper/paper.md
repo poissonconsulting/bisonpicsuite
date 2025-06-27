@@ -78,6 +78,8 @@ The first app is `shinybisonpic`, a web-based app that allows users to upload an
 The second app is `runbisonpic`, a locally-run app that allows users with various skill levels to run the model to estimate the abundance by class, total abundance, survival and fecundity rates, and various sex-age ratios (e.g., Fig. 2).
 The `bisonpicsuite` package loads the three other packages.
 
+![*Bisonpicsuite package structure* \label{fig:packageoverview}](bisonpic_suite.png)
+
 # Limitations
 
 - The model can take over 5 hours to run.
