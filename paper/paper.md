@@ -73,10 +73,13 @@ Collectively, these methods could be applied non-invasively to a wide array of d
 
 This method is implemented using four related R packages.
 The underlying functionality to check, clean, process, model, and visualize data is provided by `bisonpictools`.
-The other two R packages are apps that provide a user-friendly interface to `bisonpictools`. 
-The first app is `shinybisonpic`, a web-based app that allows users to upload and explore data by viewing camera locations and ratios of selected sex-age groups (e.g., Fig. 1). 
-The second app is `runbisonpic`, a locally-run app that allows users with various skill levels to run the model to estimate the abundance by class, total abundance, survival and fecundity rates, and various sex-age ratios (e.g., Fig. 2).
-The `bisonpicsuite` package loads the three other packages.
+The other two R packages are R shiny apps that provide a user-friendly interface to `bisonpictools`.
+Each app starts with an upload data tab that allows users to upload their data and runs a series of checks to ensure the data follows the required format for the next steps.
+The first app is `shinybisonpic`, a web-based app that allows users to explore data by viewing camera locations on a map in one tab and plots of ratios of selected sex-age groups by location and year (e.g., Fig. 1) in another tab. 
+The second app is `runbisonpic`, a locally-run app that allows users with various skill levels to run the model to estimate the abundance by class, total abundance, survival and fecundity rates, and various sex-age ratios (e.g., Fig. 2). 
+To run the model users only have to select the thinning value before hitting the run button in the run model tab and then can explore the tables and plots in the results tab.
+Both apps have a help and about tab to provide instructions for users. 
+The `bisonpicsuite` package loads the three packages.
 
 ![*Bisonpicsuite package structure* \label{fig:packageoverview}](bisonpic_suite.png)
 
