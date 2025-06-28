@@ -76,7 +76,7 @@ The other two R packages are R shiny apps that provide a user-friendly interface
 Each app starts with an upload data tab that allows users to upload their data and runs a series of checks to ensure the data follows the required format for the next steps.
 The first app is `shinybisonpic`, a web-based app that allows users to explore data by viewing camera locations on a map in one tab and plots of ratios of selected sex-age groups by location and year (e.g., Fig. 1) in another tab. 
 The second app is `runbisonpic`, a locally-run app that allows users with various skill levels to run the model to estimate the abundance by class, total abundance, survival and fecundity rates, and various sex-age ratios (e.g., Fig. 2). 
-To run the model users only have to select the thinning value before hitting the run button in the run model tab and then can explore the tables and plots in the results tab.
+To run the model users select the thinning amount before pressing the run button in the run model tab and then can explore the results as tables and plots in the results tab.
 Both apps have a help and about tab to provide instructions for users. 
 The `bisonpicsuite` package loads the three packages.
 
