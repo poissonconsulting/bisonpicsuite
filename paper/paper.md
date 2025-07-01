@@ -28,16 +28,13 @@ tags:
 
 Knowledge of population status and trends is integral to the effective conservation and management of wildlife populations. 
 To this end, demographic ratios (e.g., Calf:Cow ratios, Fig. 1) are routinely used in wildlife management as a readily observable measure of productivity and for forecasting population trajectories [@fuller2007; @wittmer2005; @bender2006]. 
-More complex state-space population modeling approaches [@buckland2004; @paterson2019; @mizuki2020; @newman2023] can also be used to estimate survival and fecundity.
+More complex population modeling approaches [@buckland2004; @paterson2019; @mizuki2020; @newman2023] can also be used to estimate survival and fecundity.
 To understand the age composition of a population, both approaches require classified (by age and sex) counts of individuals.
 
-In remote areas, estimates of herd size and composition are typically obtained from aerial surveys. 
-However, distinguishing animal age and sex can be challenging, particularly in forested environments if animals flee or hide from aircraft. 
-Remote cameras present an alternative method for obtaining classified counts. 
-Wildlife cameras have been used to estimate species occupancy, density, behaviour, and to identify individuals through distinct markings [@magoun2011; @steenweg2016; @caravaggi2017; @green2020; @nakashima2020; @singh2022]. 
-Although different age and sex classes can be readily distinguished in remote camera photos for many ungulate species [@laskin2020], classified count camera data are seldom utilized to estimate population parameters without using individual markings (but see @horneestimating2021, @chitwoodare2017, @ikedaevaluation2013).
-
-There are various R packages that work with camera trap data but no packages that we are aware of that use a Bayesian integrated population model to generate estimates for population vital rates.
+The use of remote cameras to monitor wildlife species for conservation and management has become widespread and R packages have been developed to manage camera data and estimate species occupancy, density and abundance [@doser_spabundance_2024; @doser_spoccupancy_2022; @moeller_spacentime_2022; @naimi_sdm_2016; @niedballa_camtrapr_2016] (Doser et al. 2024, Doser et al. 2022, Moeller and Lukacs 2022, Naimi and Arujo 2016, Niedballa et al. 2016).
+In animals without individual markings, other population parameters are seldom estimated (but see [@horneestimating2021; @chitwoodare2017; @ikedaevaluation2013]) (but see Horne & Thompson (2021), Chitwood et al. (2017), Ikeda et al. (2013)). 
+The authors are unaware of any other R packages that use classified counts from camera data to generate estimates of survival and recruitment, even though different age and sex classes can be readily distinguished in remote camera photos for many species [@laskin2020] (Laskin et al. 2020).
+We demonstrate an R package using a Bayesian integrated population model to generate estimates for these vital rates, combined with a Gaussian process regression to account for spatial and temporal correlations.
 
 ![*Data exploration plot from the shinybisonpic app, showing calf:cow ratios over time from individual remote cameras in the Ronald Lake Wood Bison range in northeast Alberta. Ratios are shown with camera trap ID, observation date, study year, season, and group size. A ratio of 0 represents a group of entirely cows, while an infinite ratio (Inf) represents a group of entirely calves.* \label{fig:ratioplot}](ratio-plot.png) 
 
