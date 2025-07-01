@@ -67,15 +67,14 @@ Collectively, these methods could be applied non-invasively to a wide array of h
 
 ![*Runbisonpic app prediction plot showing estimated population ratios for the Ronald Lake Wood Bison herd, by study year. M0 and F0 are male and female calves, M1 and F1 are male and female yearlings, Calf and Yearling represent all individuals within those age classes including those with unknown sex, M2 and M3 represent male two- and three-year-olds, MA represents males aged four and older, and FA represents females aged two and older.* \label{fig:modelplot}](model-plot.png)
 
-This method is implemented using four related R packages.
-The underlying functionality to check, clean, process, model, and visualize data is provided by `bisonpictools`.
-The other two packages are R shiny apps that provide a user-friendly interface to `bisonpictools`.
+This method is implemented using four related R packages, with `bisonpicsuite` loading the other three packages.
+Core functionality for checking, cleaning, processing, modeling, and visualizing data is provided by `bisonpictools`.
+The remaining two packages are R shiny apps that provide a user-friendly interface to `bisonpictools`.
 Each app starts with an upload data tab that allows users to upload their data and runs a series of checks to ensure the data follows the required format for the next steps.
 The first app is `shinybisonpic`, a web-based app that allows users to explore data by viewing camera locations on a map in one tab and plots of ratios of selected sex-age groups by location and year (e.g., Fig. 1) in another tab. 
 The second app is `runbisonpic`, a locally-run app that allows users with various skill levels to run the model to estimate the abundance by class, total abundance, survival and fecundity rates, and various sex-age ratios (e.g., Fig. 2). 
 To run the model users select the thinning amount before pressing the run button in the run model tab and then can explore the results as tables and plots in the results tab.
 Both apps have a help and about tab to provide instructions for users. 
-The `bisonpicsuite` package loads the three packages.
 
 ![*Bisonpicsuite package structure* \label{fig:packageoverview}](bisonpic_suite.png)
 
