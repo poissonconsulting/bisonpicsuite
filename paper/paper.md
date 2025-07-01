@@ -36,7 +36,7 @@ In animals without individual markings, other population parameters are seldom e
 The authors are unaware of any other R packages that use classified counts from camera data to generate estimates of survival and recruitment, even though different age and sex classes can be readily distinguished in remote camera photos for many species [@laskin2020].
 We demonstrate an R package using a Bayesian integrated population model to generate estimates for these vital rates, combined with a Gaussian process regression to account for spatial and temporal correlations.
 
-![*Plot from the shinybisonpic app, showing calf:cow ratios over time from individual remote cameras in the Ronald Lake Wood Bison range in northeast Alberta. Ratios are shown with camera trap ID, observation date, study year, season, and group size. A ratio of 0 represents a group of entirely cows, while an infinite ratio (Inf) represents a group of entirely calves.* \label{fig:ratioplot}](ratio-plot.png) 
+![*shinybisonpic app plot showing calf:cow ratios over time from individual remote cameras in the Ronald Lake Wood Bison range in northeast Alberta. Ratios are shown with camera trap ID, observation date, study year, season, and group size. A ratio of 0 represents a group of entirely cows, while an infinite ratio (Inf) represents a group of entirely calves.* \label{fig:ratioplot}](ratio-plot.png) 
 
 # Summary
 
