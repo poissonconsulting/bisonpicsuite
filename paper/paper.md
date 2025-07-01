@@ -28,23 +28,21 @@ tags:
 
 Knowledge of population status and trends is integral to the effective conservation and management of wildlife populations. 
 To this end, demographic ratios (e.g., Calf:Cow ratios, Fig. 1) are routinely used in wildlife management as a readily observable measure of productivity and for forecasting population trajectories [@fuller2007; @wittmer2005; @bender2006]. 
-More complex state-space population modeling approaches [@buckland2004; @paterson2019; @mizuki2020; @newman2023] can also be used to estimate survival and fecundity.
+More complex population modeling approaches [@buckland2004; @paterson2019; @mizuki2020; @newman2023] can also be used to estimate survival and fecundity.
 To understand the age composition of a population, both approaches require classified (by age and sex) counts of individuals.
 
-In remote areas, estimates of herd size and composition are typically obtained from aerial surveys. 
-However, distinguishing animal age and sex can be challenging, particularly in forested environments if animals flee or hide from aircraft. 
-Remote cameras present an alternative method for obtaining classified counts. 
-Wildlife cameras have been used to estimate species occupancy, density, behaviour, and to identify individuals through distinct markings [@magoun2011; @steenweg2016; @caravaggi2017; @green2020; @nakashima2020; @singh2022]. 
-Although different age and sex classes can be readily distinguished in remote camera photos for many ungulate species [@laskin2020], classified count camera data are seldom utilized to estimate population parameters without using individual markings (but see @horneestimating2021, @chitwoodare2017, @ikedaevaluation2013).
+The use of remote cameras to monitor wildlife species for conservation and management has become widespread and R packages have been developed to manage camera data and estimate species occupancy, density and abundance [@doser_spabundance_2024; @doser_spoccupancy_2022; @moeller_spacentime_2022; @naimi_sdm_2016; @niedballa_camtrapr_2016].
+In animals without individual markings, other population parameters are seldom estimated (but see [@horneestimating2021; @chitwoodare2017; @ikedaevaluation2013]). 
+The authors are unaware of any other R packages that use classified counts from camera data to generate estimates of survival and recruitment, even though different age and sex classes can be readily distinguished in remote camera photos for many species [@laskin2020].
+We demonstrate an R package using a Bayesian integrated population model to generate estimates for these vital rates, combined with a Gaussian process regression to account for spatial and temporal correlations.
 
-![*Figure 1. Data exploration plot from the shinybisonpic app, showing calf:cow ratios over time from individual remote cameras in the Ronald Lake Wood Bison range in northeast Alberta. Ratios are shown with camera trap ID, observation date, study year, season, and group size. A ratio of 0 represents a group of entirely cows, while an infinite ratio (Inf) represents a group of entirely calves.* \label{fig:ratioplot}](ratio-plot.png) 
+![*Data exploration plot from the shinybisonpic app, showing calf:cow ratios over time from individual remote cameras in the Ronald Lake Wood Bison range in northeast Alberta. Ratios are shown with camera trap ID, observation date, study year, season, and group size. A ratio of 0 represents a group of entirely cows, while an infinite ratio (Inf) represents a group of entirely calves.* \label{fig:ratioplot}](ratio-plot.png) 
 
 # Summary
 
 We present a method utilizing classified counts from remote cameras to evaluate wood bison (*Bison bison athabascae*) herd demographics.
 We modeled demographic ratios, survival, and productivity using a Bayesian integrated population model (IPM) to combine stage-structured information from multiple data sources and estimate demographic states and transitions [@schaubintegrated2022]. 
 The data included classified counts from camera trap observations and census and proportion of calves estimates from aerial surveys.
-
 
 A series of binomial distributions were used to inform both the counts of classified individuals each age class (calf, yearling, adult) and corresponding sex ratios from each camera trap observation.
 Using binomial distributions, as opposed to a multinomial distribution, allowed us to account for individuals that were classified by age, but not by sex.
@@ -67,14 +65,19 @@ The information from the aerial surveys was integrated into the model, helping i
 A Gaussian process regression [@mcelreath2016] accounted for the spatial and temporal correlation structure of the camera trap observations.
 Collectively, these methods could be applied non-invasively to a wide array of difficult to survey species to estimate key parameters that drive population dynamics.
 
-![*Figure 2. Example of a prediction plot from the runbisonpic app, showing estimated population ratios for the Ronald Lake Wood Bison herd, by study year. M0 and F0 are male and female calves, M1 and F1 are male and female yearlings, Calf and Yearling represent all individuals within those age classes including those with unknown sex, M2 and M3 represent male two- and three-year-olds, MA represents males aged four and older, and FA represents females aged two and older.* \label{fig:modelplot}](model-plot.png)
+![*Example of a prediction plot from the runbisonpic app, showing estimated population ratios for the Ronald Lake Wood Bison herd, by study year. M0 and F0 are male and female calves, M1 and F1 are male and female yearlings, Calf and Yearling represent all individuals within those age classes including those with unknown sex, M2 and M3 represent male two- and three-year-olds, MA represents males aged four and older, and FA represents females aged two and older.* \label{fig:modelplot}](model-plot.png)
 
 This method is implemented using four related R packages.
 The underlying functionality to check, clean, process, model, and visualize data is provided by `bisonpictools`.
-The other two R packages are apps that provide a user-friendly interface to `bisonpictools`. 
-The first app is `shinybisonpic`, a web-based app that allows users to upload and explore data by viewing camera locations and ratios of selected sex-age groups (e.g., Fig. 1). 
-The second app is `runbisonpic`, a locally-run app that allows users with various skill levels to run the model to estimate the abundance by class, total abundance, survival and fecundity rates, and various sex-age ratios (e.g., Fig. 2).
-The `bisonpicsuite` package loads the three other packages.
+The other two R packages are R shiny apps that provide a user-friendly interface to `bisonpictools`.
+Each app starts with an upload data tab that allows users to upload their data and runs a series of checks to ensure the data follows the required format for the next steps.
+The first app is `shinybisonpic`, a web-based app that allows users to explore data by viewing camera locations on a map in one tab and plots of ratios of selected sex-age groups by location and year (e.g., Fig. 1) in another tab. 
+The second app is `runbisonpic`, a locally-run app that allows users with various skill levels to run the model to estimate the abundance by class, total abundance, survival and fecundity rates, and various sex-age ratios (e.g., Fig. 2). 
+To run the model users select the thinning amount before pressing the run button in the run model tab and then can explore the results as tables and plots in the results tab.
+Both apps have a help and about tab to provide instructions for users. 
+The `bisonpicsuite` package loads the three packages.
+
+![*Bisonpicsuite package structure* \label{fig:packageoverview}](bisonpic_suite.png)
 
 # Limitations
 
