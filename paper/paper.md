@@ -36,7 +36,7 @@ In animals without individual markings, other population parameters are seldom e
 The authors are unaware of any other R packages that use classified counts from camera data to generate estimates of survival and recruitment, even though different age and sex classes can be readily distinguished in remote camera photos for many species [@laskin2020].
 We demonstrate an R package using a Bayesian integrated population model to generate estimates for these vital rates, combined with a Gaussian process regression to account for spatial and temporal correlations.
 
-![*Data exploration plot from the shinybisonpic app, showing calf:cow ratios over time from individual remote cameras in the Ronald Lake Wood Bison range in northeast Alberta. Ratios are shown with camera trap ID, observation date, study year, season, and group size. A ratio of 0 represents a group of entirely cows, while an infinite ratio (Inf) represents a group of entirely calves.* \label{fig:ratioplot}](ratio-plot.png) 
+![*Plot from the shinybisonpic app, showing calf:cow ratios over time from individual remote cameras in the Ronald Lake Wood Bison range in northeast Alberta. Ratios are shown with camera trap ID, observation date, study year, season, and group size. A ratio of 0 represents a group of entirely cows, while an infinite ratio (Inf) represents a group of entirely calves.* \label{fig:ratioplot}](ratio-plot.png) 
 
 # Summary
 
@@ -62,10 +62,10 @@ where $F0_i$ is the number of female calves, $M0_i$ is the number of male calves
 
 The model also estimated the fecundity rate, the proportion of fecund cows aged two and older, the annually-varying survival rates for each class, and produced derived estimates of several key population ratios (Fig. 2).
 The information from the aerial surveys was integrated into the model, helping inform the total number of individuals (i.e., the sum of the class-wise abundances) and the proportion of calves (i.e., $p_{F0_i} + p_{M0_i}$) on the dates of the aerial surveys.
-A Gaussian process regression [@mcelreath2016] accounted for the spatial and temporal correlation structure of the camera trap observations.
-Collectively, these methods could be applied non-invasively to a wide array of difficult to survey species to estimate key parameters that drive population dynamics.
+A Gaussian process regression [@mcelreath2016] accounted for the spatial and temporal correlation of the camera trap observations.
+Collectively, these methods could be applied non-invasively to a wide array of hard-to-survey species to estimate key parameters driving population dynamics.
 
-![*Example of a prediction plot from the runbisonpic app, showing estimated population ratios for the Ronald Lake Wood Bison herd, by study year. M0 and F0 are male and female calves, M1 and F1 are male and female yearlings, Calf and Yearling represent all individuals within those age classes including those with unknown sex, M2 and M3 represent male two- and three-year-olds, MA represents males aged four and older, and FA represents females aged two and older.* \label{fig:modelplot}](model-plot.png)
+![*Prediction plot example from the runbisonpic app, showing estimated population ratios for the Ronald Lake Wood Bison herd, by study year. M0 and F0 are male and female calves, M1 and F1 are male and female yearlings, Calf and Yearling represent all individuals within those age classes including those with unknown sex, M2 and M3 represent male two- and three-year-olds, MA represents males aged four and older, and FA represents females aged two and older.* \label{fig:modelplot}](model-plot.png)
 
 This method is implemented using four related R packages.
 The underlying functionality to check, clean, process, model, and visualize data is provided by `bisonpictools`.
