@@ -42,7 +42,7 @@ We demonstrate an R package using a Bayesian integrated population model to gene
 
 We present a method utilizing classified counts from remote cameras to evaluate wood bison (*Bison bison athabascae*) herd demographics.
 We modeled demographic ratios, survival, and productivity using a Bayesian integrated population model (IPM) to combine stage-structured information from multiple data sources and estimate demographic states and transitions [@schaubintegrated2022]. 
-The data included classified counts from camera trap observations and census and proportion of calves estimates from aerial surveys.
+The data included classified counts from camera traps and calf proportion and census estimates from aerial surveys.
 
 A series of binomial distributions were used to inform both the counts of classified individuals each age class (calf, yearling, adult) and corresponding sex ratios from each camera trap observation.
 Using binomial distributions, as opposed to a multinomial distribution, allowed us to account for individuals that were classified by age, but not by sex.
