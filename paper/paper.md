@@ -65,7 +65,7 @@ The information from the aerial surveys was integrated into the model, helping i
 A Gaussian process regression [@mcelreath2016] accounted for the spatial and temporal correlation of the camera trap observations.
 Collectively, these methods could be applied non-invasively to a wide array of hard-to-survey species to estimate key parameters driving population dynamics.
 
-![*Runbisonpic app prediction plot example showing estimated population ratios for the Ronald Lake Wood Bison herd, by study year. M0 and F0 are male and female calves, M1 and F1 are male and female yearlings, Calf and Yearling represent all individuals within those age classes including those with unknown sex, M2 and M3 represent male two- and three-year-olds, MA represents males aged four and older, and FA represents females aged two and older.* \label{fig:modelplot}](model-plot.png)
+![*Runbisonpic app prediction plot showing estimated population ratios for the Ronald Lake Wood Bison herd, by study year. M0 and F0 are male and female calves, M1 and F1 are male and female yearlings, Calf and Yearling represent all individuals within those age classes including those with unknown sex, M2 and M3 represent male two- and three-year-olds, MA represents males aged four and older, and FA represents females aged two and older.* \label{fig:modelplot}](model-plot.png)
 
 This method is implemented using four related R packages.
 The underlying functionality to check, clean, process, model, and visualize data is provided by `bisonpictools`.
