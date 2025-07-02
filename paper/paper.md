@@ -33,7 +33,7 @@ To understand the age composition of a population, both approaches require class
 
 The use of remote cameras to monitor wildlife species for conservation and management has become widespread and R packages have been developed to manage camera data and estimate species occupancy, density and abundance [@doser_spabundance_2024; @doser_spoccupancy_2022; @moeller_spacentime_2022; @naimi_sdm_2016; @niedballa_camtrapr_2016].
 In animals without individual markings, other population parameters are seldom estimated, although exceptions exist [@horneestimating2021; @chitwoodare2017; @ikedaevaluation2013]. 
-The authors are unaware of any other R packages that use classified counts from camera data to generate estimates of survival and recruitment, even though different age and sex classes can be readily distinguished in remote camera photos for many species [@laskin2020].
+We are unaware of any other R packages that use classified counts from camera data to generate estimates of survival and recruitment, even though different age and sex classes can be readily distinguished in remote camera photos for many species [@laskin2020].
 We demonstrate an R package using a Bayesian integrated population model to generate estimates for these vital rates, combined with a Gaussian process regression to account for spatial and temporal correlations.
 
 ![*Shinybisonpic app data exploration plot showing calf:cow ratios over time from individual remote cameras in the Ronald Lake Wood Bison range in northeast Alberta. Ratios are shown with camera trap ID, observation date, study year, season, and group size. A ratio of 0 represents a group of entirely cows, while an infinite ratio (Inf) represents a group of entirely calves.* \label{fig:ratioplot}](ratio-plot.png) 
@@ -69,7 +69,7 @@ Collectively, these methods could be applied non-invasively to a wide array of h
 
 This method is implemented using four related R packages, with `bisonpicsuite` loading the other three packages.
 Core functionality for checking, cleaning, processing, modeling, and visualizing data is provided by `bisonpictools`.
-The remaining two packages are R shiny apps that provide a user-friendly interface to `bisonpictools`.
+The remaining two packages are R shiny apps that provide a user-friendly interface to `bisonpictools` (Fig. 3).
 Each app starts with an upload data tab that allows users to upload their data and runs a series of checks to ensure the data follows the required format for the next steps.
 The first app, `shinybisonpic`, is a web-based app that allows users to explore data by viewing camera locations on a map in one tab and plots of ratios of selected sex-age groups by location and year (e.g., Fig. 1) in another tab. 
 The second app, runbisonpic, is a locally-run app that enables users with limited R or Bayesian modeling experience to estimate class-specific and total abundance, survival and fecundity rates, and sex-age ratios (e.g., Fig. 2).
