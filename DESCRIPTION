@@ -1,6 +1,6 @@
 Package: bisonpicsuite
 Title: Easily Install and Load `bisonpic` R Packages
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: c(
     person("Nicole", "Hill", , "nicole@poissonconsulting.ca", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7623-2153")),     
