@@ -2,22 +2,7 @@
 
 # bisonpicsuite 0.1.2
 
-- Merge pull request #23 from poissonconsulting/joss-updates-2.
-
-  Joss updates 2
-
-- Merge pull request #21 from poissonconsulting/joss-updates-2.
-
-  Joss updates 2
-
-- Merge pull request #20 from poissonconsulting/joss-updates-2.
-
-  Joss review comment updates
-
-- Merge pull request #18 from poissonconsulting/joss-update.
-
-  JOSS Review update
-
+- Release following JOSS review.
 
 # bisonpicsuite 0.1.1
 
