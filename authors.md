@@ -28,13 +28,13 @@ Source:
 [`DESCRIPTION`](https://github.com/poissonconsulting/bisonpicsuite/blob/main/DESCRIPTION)
 
 Hill N, Pearson A, Kortello A (2026). *bisonpicsuite: Easily Install and
-Load 'bisonpic' R Packages*. R package version 0.1.2,
+Load 'bisonpic' R Packages*. R package version 0.1.2.9000,
 <https://github.com/poissonconsulting/bisonpicsuite>.
 
     @Manual{,
       title = {bisonpicsuite: Easily Install and Load `bisonpic` R Packages},
       author = {Nicole Hill and Ayla Pearson and Andrea Kortello},
       year = {2026},
-      note = {R package version 0.1.2},
+      note = {R package version 0.1.2.9000},
       url = {https://github.com/poissonconsulting/bisonpicsuite},
     }
