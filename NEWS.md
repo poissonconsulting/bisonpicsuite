@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# bisonpicsuite 0.1.2.9001
+
+- Same as previous version.
+
+
 # bisonpicsuite 0.1.2.9000
 
 * Add fledge-bump workflow
