@@ -30,9 +30,6 @@ Load the bisonpic suite of packages by executing the following code
 ``` r
 
 library(bisonpicsuite)
-#> Registered S3 method overwritten by 'mcmcr':
-#>   method         from 
-#>   as.mcmc.nlists nlist
 #> Attaching: bisonpictools shinybisonpic runbisonpic bisonpicsuite
 ```
 

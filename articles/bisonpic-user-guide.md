@@ -1,6 +1,6 @@
 # User Guide for shinybisonpic and runbisonpic Apps
 
-    June 26, 2026
+    October 21, 2026
 
 ## Introduction
 
@@ -697,13 +697,9 @@ the NEWS.md file of each package:
 ## Version
 
     R version 4.6.1 (2026-06-24)
-    shinybisonpic: 0.5.0.9003
-    runbisonpic: 0.3.0.9002
-    bisonpictools: 0.1.0.9000
-
-    #> Registered S3 method overwritten by 'mcmcr':
-    #>   method         from 
-    #>   as.mcmc.nlists nlist
+    shinybisonpic: 0.5.0.9005
+    runbisonpic: 0.3.0.9004
+    bisonpictools: 0.1.0.9001
 
 ## Licensing
 
