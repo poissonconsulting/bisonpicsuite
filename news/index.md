@@ -1,5 +1,21 @@
 # Changelog
 
+## bisonpicsuite 0.1.2.9002
+
+### Chore
+
+- Format with air
+  ([\#32](https://github.com/poissonconsulting/bisonpicsuite/issues/32),
+  [\#33](https://github.com/poissonconsulting/bisonpicsuite/issues/33)).
+
+### Uncategorized
+
+- Merge pull request
+  [\#37](https://github.com/poissonconsulting/bisonpicsuite/issues/37)
+  from poissonconsulting/f-ci.
+
+  Standardize CI (tier: important)
+
 ## bisonpicsuite 0.1.2.9001
 
 - Same as previous version.
