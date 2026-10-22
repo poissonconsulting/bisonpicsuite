@@ -1,4 +1,17 @@
-<!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
+<!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
+
+# bisonpicsuite 0.1.2.9002
+
+## Chore
+
+- Format with air (#32, #33).
+
+## Uncategorized
+
+- Merge pull request #37 from poissonconsulting/f-ci.
+
+  Standardize CI (tier: important)
+
 
 # bisonpicsuite 0.1.2.9001
 
